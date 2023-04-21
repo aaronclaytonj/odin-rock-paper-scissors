@@ -66,20 +66,27 @@ function game() {
   let i = 0;
   let playerScore = 0;
   let computerScore = 0;
+  let res = "Tie";
   while (i < 5) {
-    let result = playRound(getPlayerInput(), getComputerChoice());
-    console.log(result);
-    if (result.includes("lose")) {
+    let roundRes = playRound(getPlayerInput(), getComputerChoice());
+    console.log(roundRes);
+    if (roundRes.includes("lose")) {
       computerScore++;
-    } else if (result.includes("win")) {
+    } else if (roundRes.includes("win")) {
       playerScore++;
     }
     i++;
   }
+
+  if (playerScore > computerScore) {
+    res = "Win";
+  } else if (playerScore < computerScore) {
+    res = "Lose";
+  }
   console.log(
-    `You ${
-      playerScore > computerScore ? "win" : "lose"
-    }! You had a score of: ${playerScore}. The computer had: ${computerScore}`
+    res != "Tie"
+      ? `You ${res}! You had a score of: ${playerScore}. The computer had: ${computerScore}`
+      : `It was a ${res}! You had a score of: ${playerScore}. The computer had: ${computerScore}`
   );
 }
 
