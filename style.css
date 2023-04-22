@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(100, 99, 99);
+  font-family: "Bruno Ace SC", cursive;
+}
+
+button {
+  font-family: "Bruno Ace SC", cursive;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+}
+
+.result {
+  height: 20px;
+  text-align: center;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.final-result-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+}
+
+.play-again {
+  width: 15%;
+}
+
+.final-res {
+  /* text-align: center; */
+}
+
+.player-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score {
+  font-size: 128px;
+  /* font-family: "Bruno Ace SC", cursive; */
+  color: rgb(170, 255, 43);
+}
