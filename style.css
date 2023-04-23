@@ -39,7 +39,8 @@ button {
 }
 
 .play-again {
-  width: 15%;
+  width: 30%;
+  min-width: 70px;
 }
 
 .final-res {
@@ -53,7 +54,7 @@ button {
 }
 
 .score {
-  font-size: 128px;
+  font-size: 8vw;
   /* font-family: "Bruno Ace SC", cursive; */
   color: rgb(170, 255, 43);
 }
